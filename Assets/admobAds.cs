@@ -90,7 +90,7 @@ public class admobAds : MonoBehaviour
             string adUnitId = "unexpected_platform";
 #endif
 
-        this.bannerView = new BannerView(adUnitId, AdSize.Banner, AdPosition.Bottom);
+        this.bannerView = new BannerView(adUnitId, AdSize.Banner, AdPosition.BottomLeft);
 
         // Create an empty ad request.
         AdRequest request = new AdRequest.Builder().Build();
@@ -179,5 +179,8 @@ public class admobAds : MonoBehaviour
         {
             this.interstitial.Show();
         }
+    }
+    void OnMouseDown(){
+        Interstitial();
     }
 }
