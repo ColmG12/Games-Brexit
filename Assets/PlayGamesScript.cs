@@ -30,8 +30,8 @@ public class PlayGamesScript : MonoBehaviour
     public void loginCallback(Boolean success){
         if (success)
 		{
-			Debug.Log("signed in");
-		}
+            FirstAd();
+ 		}
 		else
 		{
 			Debug.Log("Sign in error");

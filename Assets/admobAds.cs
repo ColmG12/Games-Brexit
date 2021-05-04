@@ -10,7 +10,6 @@ public class admobAds : MonoBehaviour
     private InterstitialAd interstitial;
     private RewardedAd rewardedAd;
 
-    private PlayGamesScript playGamesScript;
 
     // Start is called before the first frame update
     void Start()
@@ -20,7 +19,6 @@ public class admobAds : MonoBehaviour
         this.RequestBanner();
         this.RequestInterstitial();
         this.CreateAndLoadRewardedAd();
-        playGamesScript.FirstAd();
     }
 
     // Update is called once per frame
