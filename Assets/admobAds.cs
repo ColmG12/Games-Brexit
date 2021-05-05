@@ -91,7 +91,7 @@ public class admobAds : MonoBehaviour
             string adUnitId = "unexpected_platform";
 #endif
 
-        this.bannerView = new BannerView(adUnitId, AdSize.Banner, AdPosition.BottomLeft);
+        this.bannerView = new BannerView(adUnitId, AdSize.SmartBanner, AdPosition.TopLeft);
 
         // Create an empty ad request.
         AdRequest request = new AdRequest.Builder().Build();
